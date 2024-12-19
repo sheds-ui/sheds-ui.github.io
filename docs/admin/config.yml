@@ -1,10 +1,16 @@
 backend:
   # Use netlify identity as backend
-  name: git-gateway
-  branch: main
+  #name: git-gateway
+  #branch: main
   ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
+  name: github
+  repo: sheds-ui/sheds-ui.github.io
+  auth:
+    github:
+      clientId: Iv23liMusCNpknFlpGk3  # Use the Client ID you got from GitHub
+      clientSecret: 13c5357d0b93189fcc9d97b0899a9c4ac5dbe3c0  # Use the Client Secret you got from GitHub
+      scope: repo  # Define the required permissions (e.g., 'repo', 'user')
+      apiUrl: https://api.github.com  # Default GitHub API URL
 media_folder: "static/img"
 public_folder: "static/img"
 
