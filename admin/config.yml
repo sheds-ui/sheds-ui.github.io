@@ -58,3 +58,33 @@ collections:
       - { label: "Is past staff?", name: "past", widget: "boolean", default: false }
       - { label: "Cap", name: "cap", widget: "number", value_type: "int", default: 21, step: 1, hint: "Increse this by one to maintain order in past staff" }
       - { label: "Category", name: "category", widget: "hidden", default: "Staff" }
+  - label: "PhD Fellows"
+    name: "PhD Fellows"
+    folder: "_people/phd_fellows/"
+    create: true
+    media_folder: "assets/images/people/phd/"
+    public_folder: "assets/images/people/phd/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+      - { label: "Website link", name: "redirect", widget: "string", required: false }
+      - { label: "Category", name: "category", widget: "hidden", default: "Ph.D. Fellows/Scholars" }
+      - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
+      - { label: "Advisor", name: "advisor", widget: "string" }
+      - { label: "Department", name: "department", widget: "string" }
+    - label: "MTech Fellows"
+      name: "MTech Fellows"
+      folder: "_people/mtech_fellows/"
+      create: true
+      media_folder: "assets/images/people/mtech/"
+      public_folder: "assets/images/people/mtech/"
+      fields:
+        - { label: "Name", name: "title", widget: "string" }
+        - { label: "Image", name: "img", widget: "image" }
+        - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+        - { label: "Website link", name: "redirect", widget: "string", required: false }
+        - { label: "Category", name: "category", widget: "hidden", default: "M.Tech. Fellows/Scholars" }
+        - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
+        - { label: "Advisor", name: "advisor", widget: "string" }
+        - { label: "Department", name: "department", widget: "string" }
