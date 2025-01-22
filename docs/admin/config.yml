@@ -22,27 +22,6 @@ collections:
       - { label: "Show post on carousel", name: "showcase", widget: "boolean", default: false, hint: "Showcase this post on the carousel" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Seminars"
-    name: "Seminars"
-    folder: "_seminars/"
-    media_folder: "assets/seminars/2025"
-    public_folder: "assets/seminars/2025"
-    create: true
-    slug: "{{fields.date | date('YYYY-MM-DD')}}"
-    fields:
-      - { label: "layout", name: "layout", widget: "hidden", default: "seminar_page" }
-      - { label: "#n", name: "n", widget: "number", value_type: "int", default: 225, step: 1 }
-      - { label: "Title", name: "title", widget: "text" }
-      - { label: "Speaker", name: "speaker", widget: "text" }
-      - { label: "Speaker URL", name: "speaker_url", widget: "string" }
-      - { label: "Speaker Bio", name: "speaker_bio", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Venue", name: "Venue", widget: "string" }
-      - { label: "YouTube video id", name: "recorded_video", widget: "string", required: false, hint: "Add only if YouTube recording is Public" }
-      - { label: "Image", name: "img", widget: "image", required: false, hint: "Add only if YouTube recording is Private or unavailable" }
-      - { label: "Zoom link", name: "zoom_link", widget: "hidden", default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
-      - { label: "Seminar abstract", name: "Topic_abstract", widget: "text" }
-      - { label: "Slides", name: "slides", widget: "file", required: false, choose_url: false }
   - label: "Staff"
     name: "Staff"
     folder: "_people/staff/"
