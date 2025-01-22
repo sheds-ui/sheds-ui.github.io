@@ -23,7 +23,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Seminars"
-    name: "seminars"
+    name: "Seminars"
     folder: "seminars/2025/"
     create: true
     media_folder: "assets/seminars/2025/"
