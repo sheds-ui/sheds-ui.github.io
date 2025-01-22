@@ -25,6 +25,8 @@ collections:
   - label: "Seminars"
     name: "Seminars"
     folder: "seminars/"
+    media_folder: "assets/img/seminars/"
+    public_folder: "assets/img/seminars/"
     create: true
     slug: "{{fields.date | date('YYYY-MM-DD')}}"
     fields:
