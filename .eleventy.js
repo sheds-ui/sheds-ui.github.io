@@ -88,7 +88,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("seminars", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./seminars/*.md");
+    return collectionApi.getFilteredByGlob(["./seminars/*.md", "./seminars/*/*.md"]);
   });
 
   // Add the researchHighlights to the collections
