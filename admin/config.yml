@@ -25,7 +25,7 @@ collections:
   - label: "Seminars"
     name: "seminars"
     folder: "seminars/"
-    slug: "{{fields.date | date('YYYY-MM-DD')}}-{{fields.n}}"
+    slug: "{{fields.date | date('YYYY-MM-DD')}}"
     create: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "seminar_page" }
@@ -37,7 +37,7 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Venue", name: "Venue", widget: "text" }
       - { label: "YouTube video id", name: "recorded_video", widget: "text", required: false, hint: "Add only if YouTube recording is Public" }
-      - { label: "Image", name: "image", widget: "image", required: false, hint: "Add only if YouTube recording is Private or unavailable" , media_folder: "/assets/img/seminars/2025/", public_folder: "/assets/img/seminars/2025/" }
+      - { label: "Image", name: "img", widget: "image", required: false, hint: "Add only if YouTube recording is Private or unavailable" , media_folder: "/assets/img/seminars/2025/", public_folder: "/assets/img/seminars/2025/" }
       - { label: "Zoom link", name: "zoom_link", widget: "hidden", default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
       - { label: "Seminar abstract", name: "Topic_abstract", widget: "markdown" }
       - { label: "Slides", name: "slides", widget: "file", required: false, choose_url: false , media_folder: "/assets/seminar_slides/", public_folder: "/assets/seminar_slies/" }
