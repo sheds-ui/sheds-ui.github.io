@@ -43,3 +43,18 @@ collections:
       - { label: "Zoom link", name: "zoom_link", widget: "hidden", default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
       - { label: "Seminar abstract", name: "Topic_abstract", widget: "text" }
       - { label: "Slides", name: "slides", widget: "file", required: false, choose_url: false }
+  - label: "Staff"
+    name: "Staff"
+    folder: "_people/"
+    create: true
+    media_folder: "assets/images/people/staff/"
+    public_folder: "assets/images/people/staff/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Position at CNI", name: "position_at_CNI", widget: "string" }
+      - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+      - { label: "Number at which to display", name: "importance", widget: "number", value_type: "int", default: 1, step: 1 }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Is current staff?", name: "past", widget: "boolean", default: true }
+      - { label: "Cap", name: "cap", widget: "number", value_type: "int", default: 21, step: 1, hint: "Increse this by one to maintain order in past staff" }
+      - { label: "Category", name: "category", widget: "hidden", default: "Staff" }
