@@ -53,7 +53,7 @@ collections:
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Position at CNI", name: "position_at_CNI", widget: "string" }
       - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
-      - { label: "Number at which to display", name: "importance", widget: "number", value_type: "int", default: 1, step: 1 }
+      - { label: "Number at which to display", name: "importance", widget: "string" }
       - { label: "Image", name: "img", widget: "image" }
       - { label: "Is past staff?", name: "past", widget: "boolean", default: false }
       - { label: "Cap", name: "cap", widget: "number", value_type: "int", default: 21, step: 1, hint: "Increse this by one to maintain order in past staff" }
