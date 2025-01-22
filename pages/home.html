@@ -32,7 +32,12 @@ permalink: "/"
             {% set videoId = seminar.data.recorded_video %}
             <img class="d-block" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" alt="{{ seminar.data.title }}">
             {% else %}
-            <img class="d-block" src="/{{ seminar.data.img }}" alt="{{ seminar.data.title }}">
+            {% if seminar.data.img.startsWith('/') %}
+            {% set imgSrc = seminar.data.img.slice(1) %}
+            {% else %}
+            {% set imgSrc = seminar.data.img %}
+            {% endif %}
+            <img class="d-block" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}">
             {% endif %}
           </div>
           <div class="carousel-caption d-none d-md-block">

@@ -27,7 +27,12 @@ layout: base.html
     </div>
     {% endif %}
     {% if slides %}
-    <a href="{{ site.baseurl }}/{{ slides }}" type="button" class="btn button-style mx-auto" style="margin-top: 20px;" target="_blank">Slides</a>
+    {% if slides.startsWith('/') %}
+    {% set slide_src = slides.slice(1) %}
+    {% else %}
+    {% set slide_src = slides %}
+    {% endif %}
+    <a href="/{{ slide_src }}" type="button" class="btn button-style mx-auto" style="margin-top: 20px;" target="_blank">Slides</a>
     {% endif %}
     <br>
 </div> 
