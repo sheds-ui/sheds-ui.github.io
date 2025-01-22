@@ -45,7 +45,7 @@ collections:
       - { label: "Slides", name: "slides", widget: "file", required: false, choose_url: false }
   - label: "Staff"
     name: "Staff"
-    folder: "_people/"
+    folder: "_people/staff/"
     create: true
     media_folder: "assets/images/people/staff/"
     public_folder: "assets/images/people/staff/"
