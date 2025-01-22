@@ -30,7 +30,7 @@ collections:
     create: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "seminar_page" }
-      - { label: "#n", name: "n", widget: "number", value_type: "int" default: 225, step: 1 }
+      - { label: "#n", name: "n", widget: "number", value_type: "int", default: 225, step: 1 }
       - { label: "Title", name: "title", widget: "text" }
       - { label: "Speaker", name: "speaker", widget: "text" }
       - { label: "Speaker URL", name: "speaker_url", widget: "text" }
