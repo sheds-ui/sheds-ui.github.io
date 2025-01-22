@@ -47,9 +47,9 @@ permalink: "/network-seminar/"
     <!-- Content Column -->
     <div class="col-md-6">
       {% if seminar.fileSlug | length == 1 %}
-        <a href="/_seminars/{{ seminar_date }}-{{ seminar.fileSlug }}/">
+        <a href="/seminars/{{ seminar_date }}-{{ seminar.fileSlug }}/">
       {% else %}
-        <a href="/_seminars/{{ seminar.fileSlug }}/">
+        <a href="/seminars/{{ seminar.fileSlug }}/">
       {% endif %}
           <h5 class="card-text">{{ seminar.data.title }}</h5>
         </a>
@@ -123,9 +123,9 @@ permalink: "/network-seminar/"
         <div class="card-body">
           <p class="card-text">#{{ seminar.data.n }}</p>
           {% if seminar.fileSlug | length == 1 %}
-          <a href="/_seminars/{{ seminar_date }}-{{ seminar.fileSlug }}" class="card-anchor">
+          <a href="/seminars/{{ seminar_date }}-{{ seminar.fileSlug }}" class="card-anchor">
             {% else %}
-            <a href="/_seminars/{{ seminar.fileSlug }}/" class="card-anchor">
+            <a href="/seminars/{{ seminar.fileSlug }}/" class="card-anchor">
               {% endif %}
               <h6 class="card-text">{{ seminar.data.title }}</h6>
             </a>
