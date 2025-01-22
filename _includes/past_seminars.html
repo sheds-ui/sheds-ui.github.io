@@ -45,7 +45,12 @@ layout: base.html
                 <img class="card-img-top img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" ,
                     alt=" Card image cap">
                 {% else %}
-                <img class="card-img-top img-fluid" src="/{{ seminar.data.img }}" alt="{{ seminar.data.title }}">
+                {% if seminar.data.img.startsWith('/') %}
+                {% set imgSrc = seminar.data.img.slice(1) %}
+                {% else %}
+                {% set imgSrc = seminar.data.img %}
+                {% endif %}
+                <img class="img-fluid rounded" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}">
                 {% endif %}
                 {% endif %}
                 
