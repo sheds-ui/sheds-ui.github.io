@@ -56,7 +56,7 @@ collections:
       - { label: "Number at which to display", name: "importance", widget: "string" }
       - { label: "Image", name: "img", widget: "image" }
       - { label: "Is past staff?", name: "past", widget: "boolean", default: false }
-      - { label: "Cap", name: "cap", widget: "number", value_type: "int", default: 21, step: 1, hint: "Increse this by one to maintain order in past staff" }
+      - { label: "Cap", name: "cap", widget: "string", required: false, hint: "Used to maintain the order of past staff. If someone exits now, put cap as 22" }
       - { label: "Category", name: "category", widget: "hidden", default: "Staff" }
   - label: "PhD Fellows"
     name: "PhD Fellows"
