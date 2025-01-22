@@ -24,6 +24,7 @@ permalink: "/network-seminar/"
 
 {% for seminar in seminars %}
 {% set seminar_date = seminar.data.date | utcDate %}
+{% set seminar_date = seminar_date | date("yyyy-MM-dd") %}
 {% if seminar_date >= ctimeStamp %}
 <div class="container my-4">
   <div class="row">
