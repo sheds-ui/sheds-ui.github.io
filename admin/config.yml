@@ -73,18 +73,18 @@ collections:
       - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
       - { label: "Advisor", name: "advisor", widget: "string" }
       - { label: "Department", name: "department", widget: "string" }
-    - label: "MTech Fellows"
-      name: "MTech Fellows"
-      folder: "_people/mtech_fellows/"
-      create: true
-      media_folder: "assets/images/people/mtech/"
-      public_folder: "assets/images/people/mtech/"
-      fields:
-        - { label: "Name", name: "title", widget: "string" }
-        - { label: "Image", name: "img", widget: "image" }
-        - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
-        - { label: "Website link", name: "redirect", widget: "string", required: false }
-        - { label: "Category", name: "category", widget: "hidden", default: "M.Tech. Fellows/Scholars" }
-        - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
-        - { label: "Advisor", name: "advisor", widget: "string" }
-        - { label: "Department", name: "department", widget: "string" }
+  - label: "MTech Fellows"
+    name: "MTech Fellows"
+    folder: "_people/mtech_fellows/"
+    create: true
+    media_folder: "assets/images/people/mtech/"
+    public_folder: "assets/images/people/mtech/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+      - { label: "Website link", name: "redirect", widget: "string", required: false }
+      - { label: "Category", name: "category", widget: "hidden", default: "M.Tech. Fellows/Scholars" }
+      - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
+      - { label: "Advisor", name: "advisor", widget: "string" }
+      - { label: "Department", name: "department", widget: "string" }
