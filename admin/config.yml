@@ -34,11 +34,11 @@ collections:
       - { label: "#n", name: "n", widget: "number", value_type: "int", default: 225, step: 1 }
       - { label: "Title", name: "title", widget: "text" }
       - { label: "Speaker", name: "speaker", widget: "text" }
-      - { label: "Speaker URL", name: "speaker_url", widget: "text" }
+      - { label: "Speaker URL", name: "speaker_url", widget: "string" }
       - { label: "Speaker Bio", name: "speaker_bio", widget: "text" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Venue", name: "Venue", widget: "text" }
-      - { label: "YouTube video id", name: "recorded_video", widget: "text", required: false, hint: "Add only if YouTube recording is Public" }
+      - { label: "Venue", name: "Venue", widget: "string" }
+      - { label: "YouTube video id", name: "recorded_video", widget: "string", required: false, hint: "Add only if YouTube recording is Public" }
       - { label: "Image", name: "img", widget: "image", required: false, hint: "Add only if YouTube recording is Private or unavailable" }
       - { label: "Zoom link", name: "zoom_link", widget: "hidden", default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
       - { label: "Seminar abstract", name: "Topic_abstract", widget: "text" }
