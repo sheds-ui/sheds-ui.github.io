@@ -24,7 +24,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Seminars"
     name: "Seminars"
-    folder: "seminars/2025/"
+    folder: "seminars/"
     create: true
     media_folder: "assets/seminars/2025/"
     public_folder: "assets/seminars/2025/"
