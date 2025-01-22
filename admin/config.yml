@@ -88,3 +88,18 @@ collections:
       - { label: "Seminar abstract", name: "Topic_abstract", widget: "text" }
       - { label: "Seminar slides", name: "slides", widget: "file", required: false }
       - { label: "Zoom link", name: "zoom_link", widget: hidden, default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
+  - labels: "Research Highlights 2024"
+    name: "ResearchHighlights2024"
+    folder: "researchHighlights/2024/"
+    create: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "research_highlight" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Scholar's name", name: "speaker", widget: "string" }
+      - { label: "Year", name: "year", widget: "number", hint: "e.g. 2024" }
+      - { label: "Category", name: "category", widget: "select", options: ["phd", "mtech"] }
+      - { label: "YouTube video id", name: "report_video", widget: "string", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "e.g. /highlights/personName-year/" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
