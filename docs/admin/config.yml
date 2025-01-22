@@ -24,10 +24,8 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Seminars"
     name: "Seminars"
-    folder: "seminars/2025/"
+    folder: "seminars/"
     create: true
-    media_folder: "seminars/2025/"
-    public_folder: "seminars/2025/"
     slug: "{{fields.date | date('YYYY-MM-DD')}}"
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "seminar_page" }
