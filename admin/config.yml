@@ -55,6 +55,6 @@ collections:
       - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
       - { label: "Number at which to display", name: "importance", widget: "number", value_type: "int", default: 1, step: 1 }
       - { label: "Image", name: "img", widget: "image" }
-      - { label: "Is current staff?", name: "past", widget: "boolean", default: true }
+      - { label: "Is past staff?", name: "past", widget: "boolean", default: false }
       - { label: "Cap", name: "cap", widget: "number", value_type: "int", default: 21, step: 1, hint: "Increse this by one to maintain order in past staff" }
       - { label: "Category", name: "category", widget: "hidden", default: "Staff" }
