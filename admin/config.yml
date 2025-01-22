@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: cni-iisc/cni-11ty
+  branch: main
+  base_url: https://sveltia-cms-auth.cni-iisc-events.workers.dev/
+media_folder: "/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - label: "Updates"
+    name: "updates"
+    folder: "updates/"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Teaser", name: "teaser", widget: "text", hint: "Short description of the post" }
+      - { label: "Cover Image", name: "cover_image", widget: "image", required: false, hint: "Image for the carousel" }
+      - { label: "Showcase", name: "showcase", widget: "boolean", default: false, hint: "Showcase this post on the carousel" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
