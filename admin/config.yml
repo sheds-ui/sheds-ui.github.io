@@ -41,4 +41,4 @@ collections:
       - { label: "Image", name: "image", widget: "image", required: false, hint: "Add only if YouTube recording is Private or unavailable" }
       - { label: "Zoom link", name: "zoom_link", widget: "hidden", default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
       - { label: "Seminar abstract", name: "Topic_abstract", widget: "markdown" }
-      - { label: "Slides", name: "slides", widget: "file", required: false, choose_url: false, media_folder: "/assets/seminar_slides", public_folder: "/assets/seminar_slides" }
+      - { label: "Slides", name: "slides", widget: "file", required: false, choose_url: false }
