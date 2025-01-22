@@ -99,7 +99,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("Fellows", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("./_people/*.md")
+      .getFilteredByGlob(["./_people/*.md", "./_people/phd_fellows/*.md", "./_people/mtech_fellows/*.md"])
       .filter(
         (person) =>
           person.data.category === "Ph.D. Fellows/Scholars" ||
