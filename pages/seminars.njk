@@ -46,9 +46,9 @@ permalink: "/network-seminar/"
     <!-- Content Column -->
     <div class="col-md-6">
       {% if seminar.fileSlug | length == 1 %}
-        <a href="/_seminars/{{ seminar_date }}-{{ seminar.fileSlug }}/">
+        <a href="/seminars/{{ seminar_date }}-{{ seminar.fileSlug }}/">
       {% else %}
-        <a href="/_seminars/{{ seminar.fileSlug }}/">
+        <a href="/seminars/{{ seminar.fileSlug }}/">
       {% endif %}
           <h5 class="card-text">{{ seminar.data.title }}</h5>
         </a>
