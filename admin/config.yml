@@ -4,8 +4,8 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.akash-sheds.workers.dev/
   automatic_deployments: false
-media_folder: "/assets/images"
-public_folder: "/assets/images"
+media_folder: "/assets"
+public_folder: "/assets"
 
 collections:
   - label: "Updates"
@@ -67,3 +67,24 @@ collections:
       - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
       - { label: "Advisor", name: "advisor", widget: "string" }
       - { label: "Department", name: "department", widget: "string" }
+  - label: "Seminar"
+    name: "Seminar"
+    folder: "seminars/"
+    create: true
+    media_folder: "assets/seminars/2025"
+    public_folder: "assets/seminars/2025"
+    slug: "{{ fields.date | date('YYYY-MM-DD') }}"
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "seminar_page" }
+      - { label: "#n", name: "n", widget: "string"}
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Speaker", name: "speaker", widget: "string" }
+      - { label: "Venue", name: "Venue", widget: "string" }
+      - { label: "Speaker's website link", name: "speaker_url", widget: "string" }
+      - { label: "Speaker's Bio", name: "speaker_bio", widget: "text" }
+      - { label: "YouTube video id", name: "recorded_video", widget: "string", required: false, hint: "Add only if YouTube video is PUBLIC" }
+      - { label: "Image", name: "img", widget: "image", required: false, hint: "Add only if YouTube video is PRIVATE or UNAVAILABEL" }
+      - { label: "Seminar abstract", name: "Topic_abstract", widget: "text" }
+      - { label: "Seminar slides", name: "slides", widget: "file", required: false }
+      - { label: "Zoom link", name: "zoom_link", widget: hidden, default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
