@@ -88,7 +88,7 @@ collections:
       - { label: "Seminar abstract", name: "Topic_abstract", widget: "text" }
       - { label: "Seminar slides", name: "slides", widget: "file", required: false }
       - { label: "Zoom link", name: "zoom_link", widget: hidden, default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
-  - labels: "Research Highlights 2024"
+  - label: "Research Highlights 2024"
     name: "ResearchHighlights2024"
     folder: "researchHighlights/2024/"
     create: true
