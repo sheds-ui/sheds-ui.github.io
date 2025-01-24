@@ -14,6 +14,8 @@ collections:
     name: "updates"
     folder: "updates/"
     create: true
+    editor:
+      preview: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
@@ -94,6 +96,8 @@ collections:
     create: true
     media_folder: "assets/img/workshops/"
     public_folder: "assets/img/workshops/"
+    editor:
+      preview: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
       - { label: "Title", name: "title", widget: "string" }
@@ -106,6 +110,8 @@ collections:
     create: true
     media_folder: "assets/img/schools/"
     public_folder: "assets/img/schools/"
+    editor:
+      preview: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
       - { label: "Title", name: "title", widget: "string" }
@@ -118,6 +124,8 @@ collections:
     create: true
     media_folder: "assets/img/projects/"
     public_folder: "assets/img/projects/"
+    editor:
+      preview: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "base.html" }
       - { label: "Title", name: "title", widget: "string" }
@@ -130,6 +138,8 @@ collections:
     create: true
     media_folder: "assets/img/hackathons/"
     public_folder: "assets/img/hackathons/"
+    editor:
+      preview: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
       - { label: "Title", name: "title", widget: "string" }
@@ -140,6 +150,8 @@ collections:
     name: "ResearchHighlights2024"
     folder: "researchHighlights/2024/"
     create: true
+    editor:
+      preview: true
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "research_highlight" }
       - { label: "Title", name: "title", widget: "string" }
