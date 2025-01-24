@@ -32,7 +32,7 @@ collections:
     public_folder: "assets/images/people/faculty/"
     fields:
       - { label: "Name", name: "title", widget: "string" }
-      - { label: "Position at CNI", name: "position_at_CNI", widget: "string" }
+      - { label: "Position at CNI", name: "position_at_CNI", widget: "string", required: false }
       - { label: "Faculty's website link", name: "redirect", widget: "string", required: false }
       - { label: "Importance", name: "importance", widget: "number" , default: 5, hint: "Keep 5 to maintain current order" }
       - { label: "Image", name: "img", widget: "image" }
