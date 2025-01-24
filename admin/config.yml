@@ -20,7 +20,7 @@ collections:
       - { label: "Teaser", name: "teaser", widget: "text", hint: "Short description of the post" }
       - { label: "Show post on carousel", name: "showcase", widget: "boolean", default: false, hint: "Showcase this post on the carousel" }
       - { label: "Image to show on carousel", name: "img", widget: "image", required: false, hint: "Image for the carousel" }
-      - { label: "Publish Date", name: "date", widget: "datetime",  date_format: "YYYY-MM-DD" }
+      - { label: "Publish Date", name: "date", widget: "datetime",  date_format: "YYYY-MM-DD" , time_format: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Staff"
     name: "Staff"
