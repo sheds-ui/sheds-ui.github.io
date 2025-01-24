@@ -115,7 +115,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("Faculty", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("./_people/*.md")
+      .getFilteredByGlob("./_people/faculty/*.md")
       .filter((person) => person.data.category === "Faculty");
   });
 

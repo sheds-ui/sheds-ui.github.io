@@ -24,6 +24,19 @@ collections:
       - { label: "Image to show on carousel", name: "img", widget: "image", required: false, hint: "Image for the carousel" }
       - { label: "Publish Date", name: "date", widget: "datetime",  date_format: "YYYY-MM-DD" , time_format: false }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Faculty"
+    name: "Faculty"
+    folder: "_people/faculty/"
+    create: true
+    media_folder: "assets/images/people/faculty/"
+    public_folder: "assets/images/people/faculty/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Position at CNI", name: "position_at_CNI", widget: "string" }
+      - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+      - { label: "Importance", name: "importance", widget: "number" , default: 5, hint: "Keep 5 to maintain current order" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Category", name: "category", widget: "hidden", default: "Faculty" }
   - label: "Staff"
     name: "Staff"
     folder: "_people/staff/"
@@ -34,10 +47,10 @@ collections:
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Position at CNI", name: "position_at_CNI", widget: "string" }
       - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
-      - { label: "Number at which to display", name: "importance", widget: "string" }
+      - { label: "Number at which to display", name: "importance", widget: "number" }
       - { label: "Image", name: "img", widget: "image" }
       - { label: "Is past staff?", name: "past", widget: "boolean", default: false }
-      - { label: "Cap", name: "cap", widget: "string", required: false, hint: "Used to maintain the order of past staff. If someone exits now, put cap as 22" }
+      - { label: "Cap", name: "cap", widget: "number", required: false, hint: "Used to maintain the order of past staff. If someone exits now, put cap as 22" }
       - { label: "Category", name: "category", widget: "hidden", default: "Staff" }
   - label: "PhD Fellows"
     name: "PhD Fellows"
