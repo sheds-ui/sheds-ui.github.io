@@ -102,7 +102,7 @@ collections:
       - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Card image", name: "img", widget: "image" }
-      - { label: "Number at which to display", name: "importance", widget: "number" }
+      - { label: "Workshop number", name: "importance", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Summer Schools"
     name: "SummerSchools"

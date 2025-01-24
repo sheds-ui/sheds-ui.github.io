@@ -3,7 +3,7 @@ layout: project_page
 title: ICS Security workshop for MSMEs
 description:
 img: assets/img/workshops/ics_security_poster.jpeg
-importance: 3
+importance: 2
 category: ""
 owcase: false
 ---

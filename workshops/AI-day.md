@@ -3,7 +3,7 @@ layout: project_page
 title: IISc-IBM AI Day
 description: ""
 img: assets/img/workshops/AIDay-poster-v3.png
-importance: 1
+importance: 4
 category: ""
 showcase: true
 ---
