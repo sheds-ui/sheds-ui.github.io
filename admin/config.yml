@@ -97,6 +97,7 @@ collections:
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Card image", name: "img", widget: "image" }
       - { label: "Number at which to display", name: "importance", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Summer Schools"
@@ -108,6 +109,7 @@ collections:
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Card image", name: "img", widget: "image" }
       - { label: "Summer school number", name: "importance", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Projects"
@@ -120,7 +122,7 @@ collections:
       - { label: "layout", name: "layout", widget: "hidden", default: "base.html" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Number at which to display", name: "importance", widget: "number" }
-      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Card image", name: "img", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Hackathons"
     name: "Hackathons"
@@ -132,7 +134,7 @@ collections:
       - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Number at which to display", name: "importance", widget: "number" }
-      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Card image", name: "img", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Research Highlights 2024"
     name: "ResearchHighlights2024"
