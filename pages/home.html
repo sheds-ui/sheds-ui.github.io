@@ -82,23 +82,23 @@ permalink: "/"
   </div>
 </div>
 
-<div class="container mx-auto my-2" style="max-width:800px;">
+<div class="container mx-auto my-2" style="max-width:700px;">
   <section id="updates" class="py-2">
-      <h4 class="text-center mb-2 mx-auto">Latest Updates</h4>
-      <div class="table-responsive mx-auto justify-content-center">
-        <table class="table table-borderless bg-transparent text-body">
+      <h4 class="text-center mb-2 mx-auto">Recent Updates</h4>
+      <div class="table-responsive mx-auto">
+        <table class="table table-borderless table-hover">
           <tbody>
             {% for post in collections.updates %}
             {% set post_date = post.date %}
             {% if loop.index <= 4 %}
             <tr>
               <!-- Date Section -->
-              <td class="text-center align-middle bg-transparent">
+              <td class="text-center bg-transparent">
                 <div class="fw-bold fs-6">{{ post_date | date("dd") }}</div>
                 <div>{{ post_date | date("MMM yyyy") }}</div>
               </td>
               <!-- Title and Teaser Section -->
-              <td class="align-middle bg-transparent">
+              <td class="bg-transparent">
                   <h5 class="mb-1"><a href="{{ post.url }}" class="read-more text-decoration-none">{{ post.data.title }}</a></h5>
                   <p class="mb-0">{{ post.data.teaser }}</p>
               </td>
