@@ -68,14 +68,6 @@ background-color: var(--hyperlink-clr);
 
 
 
-.custom-row {
-    padding-bottom: 2rem; /* Adjust this value as needed */
-}
-
-
-
-
-
 .button-year{
     background-color: var(--navbar-clr);
     color: #ffffff;
@@ -137,3 +129,9 @@ background-color: var(--hyperlink-clr);
     background-color: var(--hyperlink-clr);
 }
 
+/* add media query for mobile view card size */
+@media (max-width: 768px) {
+    .card {
+        height: 360px;
+    }
+}
