@@ -30,7 +30,7 @@ permalink: "/"
             style="width: 50%; height: 10%; object-fit: scale-down;" alt="slide 1 image"> -->
             {% if seminar.data.recorded_video %}
             {% set videoId = seminar.data.recorded_video %}
-            <img class="d-block rounced img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" alt="{{ seminar.data.title }}">
+            <img class="d-block rounded img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" alt="{{ seminar.data.title }}">
             {% else %}
             {% if seminar.data.img.startsWith('/') %}
             {% set imgSrc = seminar.data.img.slice(1) %}
