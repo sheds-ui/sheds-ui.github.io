@@ -108,14 +108,14 @@ permalink: "/network-seminar/"
 </div>
 
 
-<div class="container">
-  <div class="row">
+<div class="container justify-content-center">
+  <div class="row jusitfy-content-center gap-0">
     {% for seminar in seminars %}
     {% set seminar_date = seminar.data.date | utcDate %}
     {% set seminar_year = seminar.data.date | date("yyyy") %}
     {% set seminar_date = seminar_date | date("yyyy-MM-dd") %}
     {% if seminar.data.date | utcDate < ctimeStamp and seminar_year==footerInfo.currentYear %} <div
-      class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+      class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
 
       <div class="card mb-3">
         {% if seminar.data.recorded_video %}
@@ -161,7 +161,7 @@ permalink: "/network-seminar/"
   {% endfor %}
 </div>
 
-<a type="button" class="btn button-style" style="margin-top: 20px; margin-bottom: 20px; width: 100%;"
+<a type="button" class="btn button-style" style="margin-top: 20px; margin-bottom: 20px; width: 100%; margin-left: 0px; margin-right: 0px;"
   href="/seminars/{{ footerInfo.currentYear - 1 }}/">
   <h6 style="margin: 0; padding: 0;">Past Seminars</h6>
 </a>

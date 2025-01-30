@@ -22,17 +22,17 @@ layout: base.html
 </div>
 </div>
 
-<div class="container text-center mt-4">
-<ul style="list-style:none; margin:0; padding:0;">
+<div class="container text-center justify-content-center my-4">
+
     {% for year, highlights in researchHighlights %}
     {% if year == current_year %}
-        <li><h3><strong>PhD</strong></h3></li>
-        <div class="row">
+        <h3><strong>PhD</strong></h3>
+        <div class="row jusitfy-content-center gap-0">
         {% for highlight in highlights %}
             {% if highlight.category == 'phd' %}
-            <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2">
+            <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0">
                 <a href="{{ highlight.url}}">
-                <div class="card">
+                <div class="card mb-3">
                 {% set videoId = highlight.video %}
                 <img class="card-img-top img-fluid" data-video-id="{{ videoId }}" src="https://img.youtube.com/vi/{{ videoId }}/hqdefault.jpg" alt="Card image cap">
                 <div class="card-body p-2">
@@ -45,11 +45,11 @@ layout: base.html
         {% endfor %}
         </div>
     
-        <li><h3 class="mt-4"><strong>MTech</strong></h3></li>
-        <div class="row custom-row"> <!-- Using custom class here -->
+        <h3 class="mt-4"><strong>MTech</strong></h3>
+        <div class="row"> <!-- Using custom class here -->
         {% for highlight in highlights %}
             {% if highlight.category == 'mtech' %}
-            <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2">
+            <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0">
                 <a href="{{ highlight.url}}">
                 <div class="card">
                 {% set videoId = highlight.video %}
@@ -65,7 +65,7 @@ layout: base.html
         </div>
     {% endif %}
     {% endfor %}
-</ul>
+
 </div>
 
 
