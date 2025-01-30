@@ -12,7 +12,7 @@ permalink: "/network-seminar/"
 
 {% set ctimeStamp = footerInfo.currentTimeStamp | date("yyyy-MM-dd HH:mm:ss") %}
 
-<div class="container">
+<div class="container" style="max-width:800 px;">
   <h1 class="mt-2 text-center">Network Seminar Series</h1>
   <p class="my-4">
     Networks Seminar, supported by the Centre for Networked Intelligence, is a technical discussion forum in topics
@@ -128,7 +128,7 @@ permalink: "/network-seminar/"
         {% else %}
         {% set imgSrc = seminar.data.img %}
         {% endif %}
-        <img class="img-fluid rounded" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}">
+        <img class="card-img-top img-fluid" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}">
         {% endif %}
         <div class="card-body">
           <p class="card-text">#{{ seminar.data.n }}</p>
